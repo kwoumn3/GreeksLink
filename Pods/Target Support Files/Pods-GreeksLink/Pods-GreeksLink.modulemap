@@ -1,0 +1,6 @@
+framework module Pods_GreeksLink {
+  umbrella header "Pods-GreeksLink-umbrella.h"
+
+  export *
+  module * { export * }
+}

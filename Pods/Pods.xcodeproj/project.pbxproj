@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020B2BD6E5EFE88BFC4328E3140BBA50 /* Pods-GreeksLinkTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CA639B843F153BE224B8EA252F59A90 /* Pods-GreeksLinkTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		073A5C3A2234F405DD3F4E599529C4C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		274A8E3CA9BACC0E0B5C0A7EEE61C9A6 /* Pods-GreeksLink-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 265DA29A8C64B6479972A58917FE4D31 /* Pods-GreeksLink-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3826282D9A25E02F15039D290A016C90 /* Pods-GreeksLinkUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60EBF64D321C00BEADA8409EBB223BF1 /* Pods-GreeksLinkUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DCB86E94260FD00C0576F202C9FA398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		69E07585B7C97C5D8AA0C4841223D278 /* Pods-GreeksLinkTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1093C39EE4DE88334C0A35EF0F9FAEEB /* Pods-GreeksLinkTests-dummy.m */; };
+		B536B019A077DF6122ADC11C41B3938A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D10B2861ECAD6F5FEB3EE86AF56BB945 /* Pods-GreeksLinkUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F03820593436A7980856CA9E9592DE /* Pods-GreeksLinkUITests-dummy.m */; };
+		F341842C952C93D1BA9F0CB723816F4D /* Pods-GreeksLink-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 810F110642175C88567F9C6201AA99E2 /* Pods-GreeksLink-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06B85C3A114C9E87BC9666EF491964CC /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		0D3041E349C66E8AAFD2AF0CADBF5F92 /* Pods-GreeksLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreeksLink.release.xcconfig"; sourceTree = "<group>"; };
+		1093C39EE4DE88334C0A35EF0F9FAEEB /* Pods-GreeksLinkTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GreeksLinkTests-dummy.m"; sourceTree = "<group>"; };
+		265DA29A8C64B6479972A58917FE4D31 /* Pods-GreeksLink-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GreeksLink-umbrella.h"; sourceTree = "<group>"; };
+		2CA639B843F153BE224B8EA252F59A90 /* Pods-GreeksLinkTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GreeksLinkTests-umbrella.h"; sourceTree = "<group>"; };
+		2E301247261C76FDF7BB24303F9F1D5B /* Pods-GreeksLink.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GreeksLink.modulemap"; sourceTree = "<group>"; };
+		3021240F567B3789E2D53F0B5877AE09 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		30402198EBE226247FDE8232F36BFEA3 /* Pods-GreeksLinkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreeksLinkTests.release.xcconfig"; sourceTree = "<group>"; };
+		336B5FA62C43B44C37C87324932952E7 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		34CAF262BB71E7850041F47EF3260ED5 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		3901A2D284A2A51E713A5ED74C1124FA /* Pods-GreeksLinkUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GreeksLinkUITests-resources.sh"; sourceTree = "<group>"; };
+		424D6788940245369F14B0A9C557DF52 /* Pods-GreeksLink-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GreeksLink-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46A2450C97E6A8327FDE4B5B6625689E /* Pods_GreeksLink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreeksLink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		479708CD7335FD4A9F50BB7A6BD0BDA7 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		47F03820593436A7980856CA9E9592DE /* Pods-GreeksLinkUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GreeksLinkUITests-dummy.m"; sourceTree = "<group>"; };
+		4CFF607AE6961A73D48203CE8EC1F15F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52250EE1DCD79BDD02BD4C533189D95C /* Pods-GreeksLinkTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GreeksLinkTests.modulemap"; sourceTree = "<group>"; };
+		5A197FAEDEA288D46AC84752CC9B2434 /* Pods-GreeksLink-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GreeksLink-resources.sh"; sourceTree = "<group>"; };
+		5E5FBB1FF50FCD0C2F723C6784B23C15 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60EBF64D321C00BEADA8409EBB223BF1 /* Pods-GreeksLinkUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GreeksLinkUITests-umbrella.h"; sourceTree = "<group>"; };
+		61FEB9D25F29549770BF4549C8EA109B /* Pods-GreeksLinkTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreeksLinkTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		63CD68AC03DFAAC9F89640EC323F10C9 /* Pods_GreeksLinkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreeksLinkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6713B6185153B2A095DCB226F4029CC8 /* Pods-GreeksLink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreeksLink.debug.xcconfig"; sourceTree = "<group>"; };
+		810F110642175C88567F9C6201AA99E2 /* Pods-GreeksLink-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GreeksLink-dummy.m"; sourceTree = "<group>"; };
+		85E1725AFAFD6253381AE4399DD5C26B /* Pods-GreeksLinkUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreeksLinkUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		88122B8AF03331EF8AC1E884576E984A /* Pods-GreeksLinkTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GreeksLinkTests-frameworks.sh"; sourceTree = "<group>"; };
+		93445A9E1569EFC19A272B2AABD76CC8 /* Pods-GreeksLinkUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GreeksLinkUITests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94E4F17500394FC485EE7C06E1FD1FB4 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		98BB44A16F79BEF584F971E949214C98 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		A217D4305CBF8D52B30264D413189B33 /* Pods-GreeksLink-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GreeksLink-frameworks.sh"; sourceTree = "<group>"; };
+		A2CDB6E2EB4294CE23A4254EF7F5955E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF11577D1086BBD20AB1515F7B122A93 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		B25A19AE58136141D2160B8C747F6F96 /* Pods-GreeksLinkTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GreeksLinkTests-resources.sh"; sourceTree = "<group>"; };
+		B2827C8E14A4646ADF8B1D26853F8185 /* Pods-GreeksLinkTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GreeksLinkTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CABF0525D2ADBC3DB7EA9CF0B10F7A8C /* Pods-GreeksLink-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GreeksLink-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF1D1CA46F64AF37FB46ACB14A9D83E4 /* Pods-GreeksLinkUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GreeksLinkUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D24824036CC9FF12AB74F634248571A4 /* Pods-GreeksLinkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreeksLinkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3737BEB5E80EE1DFACAE8DFCD75D05A /* Pods-GreeksLinkUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GreeksLinkUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DB567DBF94CDEB38CA83BFD732198E4F /* Pods_GreeksLinkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreeksLinkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E389DBE65248174779B9E5D2A8510ACA /* Pods-GreeksLinkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreeksLinkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E553A7EF3FB34805207AE443F886243A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		EB56557E3B372EC3C6A423D0A4407D69 /* Pods-GreeksLinkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GreeksLinkTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B7A26248BB859A01947877187E73074 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073A5C3A2234F405DD3F4E599529C4C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2F13FD5DEA1AE03917D701D88327160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCB86E94260FD00C0576F202C9FA398 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB191E62A8520C32436F29C3EBE60CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B536B019A077DF6122ADC11C41B3938A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0457BFFDA82ECE0AA27BC3F3BCCDA563 /* Pods-GreeksLinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E5FBB1FF50FCD0C2F723C6784B23C15 /* Info.plist */,
+				52250EE1DCD79BDD02BD4C533189D95C /* Pods-GreeksLinkTests.modulemap */,
+				B2827C8E14A4646ADF8B1D26853F8185 /* Pods-GreeksLinkTests-acknowledgements.markdown */,
+				61FEB9D25F29549770BF4549C8EA109B /* Pods-GreeksLinkTests-acknowledgements.plist */,
+				1093C39EE4DE88334C0A35EF0F9FAEEB /* Pods-GreeksLinkTests-dummy.m */,
+				88122B8AF03331EF8AC1E884576E984A /* Pods-GreeksLinkTests-frameworks.sh */,
+				B25A19AE58136141D2160B8C747F6F96 /* Pods-GreeksLinkTests-resources.sh */,
+				2CA639B843F153BE224B8EA252F59A90 /* Pods-GreeksLinkTests-umbrella.h */,
+				EB56557E3B372EC3C6A423D0A4407D69 /* Pods-GreeksLinkTests.debug.xcconfig */,
+				30402198EBE226247FDE8232F36BFEA3 /* Pods-GreeksLinkTests.release.xcconfig */,
+			);
+			name = "Pods-GreeksLinkTests";
+			path = "Target Support Files/Pods-GreeksLinkTests";
+			sourceTree = "<group>";
+		};
+		0467A09FD982402E503CCD5089004D0F /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				DC9015FE90790A9ECFD4771F6399FB10 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		184DDFEB564479F7A7C30864FFA40DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46A2450C97E6A8327FDE4B5B6625689E /* Pods_GreeksLink.framework */,
+				63CD68AC03DFAAC9F89640EC323F10C9 /* Pods_GreeksLinkTests.framework */,
+				DB567DBF94CDEB38CA83BFD732198E4F /* Pods_GreeksLinkUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E84FFDB43ED9A1940A14279ED455F5F /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				8005B45B43DCF7744628D118CD5E2BA8 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		22FDAE2672CCF9167C6EA1756B3BC1FD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73725A1F6EBF29136FCE125AB2930B9D /* Pods-GreeksLink */,
+				0457BFFDA82ECE0AA27BC3F3BCCDA563 /* Pods-GreeksLinkTests */,
+				A4C74FFBD785C8577EB4B7247CDC0F7B /* Pods-GreeksLinkUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2ABA8F7BA215458D27153D649766A73F /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				9E42C875269107D80E305CC832D7B5F8 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		492FA2F319B64E2C6ADCAEEC450992F0 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F81F16F781C66BB5DD6F8F607AE1B7F7 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		4DDD284BE842D59A41AB3C93459FCA9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF11577D1086BBD20AB1515F7B122A93 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		634DAB1E26EE4AD8712B2E5E22F4F24A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4C79E06FB30F82BD4B36C61BCC20C9D /* Firebase */,
+				2ABA8F7BA215458D27153D649766A73F /* FirebaseAnalytics */,
+				CE3779316AC2B4A7F68C00AC6E471071 /* FirebaseAuth */,
+				639628D744923DBBAF0C4B2B12FB69B6 /* FirebaseInstanceID */,
+				1E84FFDB43ED9A1940A14279ED455F5F /* GoogleInterchangeUtilities */,
+				9A536A9154F031EF28F3C777726028EB /* GoogleNetworkingUtilities */,
+				0467A09FD982402E503CCD5089004D0F /* GoogleSymbolUtilities */,
+				492FA2F319B64E2C6ADCAEEC450992F0 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		639628D744923DBBAF0C4B2B12FB69B6 /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				336B5FA62C43B44C37C87324932952E7 /* FIRInstanceID.h */,
+				4DDD284BE842D59A41AB3C93459FCA9B /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		7098BE93D27ECEE6AE67C28744FC272A /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				479708CD7335FD4A9F50BB7A6BD0BDA7 /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		73725A1F6EBF29136FCE125AB2930B9D /* Pods-GreeksLink */ = {
+			isa = PBXGroup;
+			children = (
+				A2CDB6E2EB4294CE23A4254EF7F5955E /* Info.plist */,
+				2E301247261C76FDF7BB24303F9F1D5B /* Pods-GreeksLink.modulemap */,
+				424D6788940245369F14B0A9C557DF52 /* Pods-GreeksLink-acknowledgements.markdown */,
+				CABF0525D2ADBC3DB7EA9CF0B10F7A8C /* Pods-GreeksLink-acknowledgements.plist */,
+				810F110642175C88567F9C6201AA99E2 /* Pods-GreeksLink-dummy.m */,
+				A217D4305CBF8D52B30264D413189B33 /* Pods-GreeksLink-frameworks.sh */,
+				5A197FAEDEA288D46AC84752CC9B2434 /* Pods-GreeksLink-resources.sh */,
+				265DA29A8C64B6479972A58917FE4D31 /* Pods-GreeksLink-umbrella.h */,
+				6713B6185153B2A095DCB226F4029CC8 /* Pods-GreeksLink.debug.xcconfig */,
+				0D3041E349C66E8AAFD2AF0CADBF5F92 /* Pods-GreeksLink.release.xcconfig */,
+			);
+			name = "Pods-GreeksLink";
+			path = "Target Support Files/Pods-GreeksLink";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				634DAB1E26EE4AD8712B2E5E22F4F24A /* Pods */,
+				184DDFEB564479F7A7C30864FFA40DC2 /* Products */,
+				22FDAE2672CCF9167C6EA1756B3BC1FD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8005B45B43DCF7744628D118CD5E2BA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34CAF262BB71E7850041F47EF3260ED5 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A536A9154F031EF28F3C777726028EB /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				E91858166B62F38BCCBE847265D98687 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		9E42C875269107D80E305CC832D7B5F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3021240F567B3789E2D53F0B5877AE09 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E94CBD0C1F5E0F387F97F26ED2B4E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E553A7EF3FB34805207AE443F886243A /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4C74FFBD785C8577EB4B7247CDC0F7B /* Pods-GreeksLinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CFF607AE6961A73D48203CE8EC1F15F /* Info.plist */,
+				93445A9E1569EFC19A272B2AABD76CC8 /* Pods-GreeksLinkUITests.modulemap */,
+				CF1D1CA46F64AF37FB46ACB14A9D83E4 /* Pods-GreeksLinkUITests-acknowledgements.markdown */,
+				85E1725AFAFD6253381AE4399DD5C26B /* Pods-GreeksLinkUITests-acknowledgements.plist */,
+				47F03820593436A7980856CA9E9592DE /* Pods-GreeksLinkUITests-dummy.m */,
+				D3737BEB5E80EE1DFACAE8DFCD75D05A /* Pods-GreeksLinkUITests-frameworks.sh */,
+				3901A2D284A2A51E713A5ED74C1124FA /* Pods-GreeksLinkUITests-resources.sh */,
+				60EBF64D321C00BEADA8409EBB223BF1 /* Pods-GreeksLinkUITests-umbrella.h */,
+				D24824036CC9FF12AB74F634248571A4 /* Pods-GreeksLinkUITests.debug.xcconfig */,
+				E389DBE65248174779B9E5D2A8510ACA /* Pods-GreeksLinkUITests.release.xcconfig */,
+			);
+			name = "Pods-GreeksLinkUITests";
+			path = "Target Support Files/Pods-GreeksLinkUITests";
+			sourceTree = "<group>";
+		};
+		B4C79E06FB30F82BD4B36C61BCC20C9D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				7098BE93D27ECEE6AE67C28744FC272A /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3779316AC2B4A7F68C00AC6E471071 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				9E94CBD0C1F5E0F387F97F26ED2B4E33 /* Frameworks */,
+			);
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		DC9015FE90790A9ECFD4771F6399FB10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06B85C3A114C9E87BC9666EF491964CC /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E91858166B62F38BCCBE847265D98687 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98BB44A16F79BEF584F971E949214C98 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F81F16F781C66BB5DD6F8F607AE1B7F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94E4F17500394FC485EE7C06E1FD1FB4 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E2DCA8124BA8E13152C6E5117C37E3E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274A8E3CA9BACC0E0B5C0A7EEE61C9A6 /* Pods-GreeksLink-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52994CB1EA79F85B41139687511954B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020B2BD6E5EFE88BFC4328E3140BBA50 /* Pods-GreeksLinkTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7C667528196BE10EC961B6DF612D0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3826282D9A25E02F15039D290A016C90 /* Pods-GreeksLinkUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9A891076DDD22E1E40ED4BAD6AD2378A /* Pods-GreeksLinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A67C16250DCB3CAA305D02DA3BD8A040 /* Build configuration list for PBXNativeTarget "Pods-GreeksLinkUITests" */;
+			buildPhases = (
+				453A08834F6A2A2358F5CFDDC2C7CE3A /* Sources */,
+				C2F13FD5DEA1AE03917D701D88327160 /* Frameworks */,
+				6D7C667528196BE10EC961B6DF612D0C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GreeksLinkUITests";
+			productName = "Pods-GreeksLinkUITests";
+			productReference = DB567DBF94CDEB38CA83BFD732198E4F /* Pods_GreeksLinkUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B97A70C8938FDFBA423D26C3DB5B8C5 /* Pods-GreeksLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E90CBC592EC974A4DF2D63813DB77CA /* Build configuration list for PBXNativeTarget "Pods-GreeksLink" */;
+			buildPhases = (
+				10F413408AF084A24061CE5A017E5EC0 /* Sources */,
+				ECB191E62A8520C32436F29C3EBE60CE /* Frameworks */,
+				2E2DCA8124BA8E13152C6E5117C37E3E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GreeksLink";
+			productName = "Pods-GreeksLink";
+			productReference = 46A2450C97E6A8327FDE4B5B6625689E /* Pods_GreeksLink.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5A756A2BD3439279DEB7650EF16AC40 /* Pods-GreeksLinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF7913024A4522A0C653B785CB83100 /* Build configuration list for PBXNativeTarget "Pods-GreeksLinkTests" */;
+			buildPhases = (
+				423DC684B5397B6A57245B6080F372FA /* Sources */,
+				7B7A26248BB859A01947877187E73074 /* Frameworks */,
+				52994CB1EA79F85B41139687511954B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GreeksLinkTests";
+			productName = "Pods-GreeksLinkTests";
+			productReference = 63CD68AC03DFAAC9F89640EC323F10C9 /* Pods_GreeksLinkTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 184DDFEB564479F7A7C30864FFA40DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B97A70C8938FDFBA423D26C3DB5B8C5 /* Pods-GreeksLink */,
+				A5A756A2BD3439279DEB7650EF16AC40 /* Pods-GreeksLinkTests */,
+				9A891076DDD22E1E40ED4BAD6AD2378A /* Pods-GreeksLinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10F413408AF084A24061CE5A017E5EC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F341842C952C93D1BA9F0CB723816F4D /* Pods-GreeksLink-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		423DC684B5397B6A57245B6080F372FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69E07585B7C97C5D8AA0C4841223D278 /* Pods-GreeksLinkTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453A08834F6A2A2358F5CFDDC2C7CE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10B2861ECAD6F5FEB3EE86AF56BB945 /* Pods-GreeksLinkUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10653EC75756D3104FEFB5029D9A9129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6713B6185153B2A095DCB226F4029CC8 /* Pods-GreeksLink.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GreeksLink/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreeksLink/Pods-GreeksLink.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GreeksLink;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DD41B53A9B374F0A1029E5361A055F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E389DBE65248174779B9E5D2A8510ACA /* Pods-GreeksLinkUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GreeksLinkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreeksLinkUITests/Pods-GreeksLinkUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GreeksLinkUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7B6AC4E381BEF449391FFD8B44AF74EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB56557E3B372EC3C6A423D0A4407D69 /* Pods-GreeksLinkTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GreeksLinkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreeksLinkTests/Pods-GreeksLinkTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GreeksLinkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFD98D0116DF3A5875F4B27B3BE4EE57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30402198EBE226247FDE8232F36BFEA3 /* Pods-GreeksLinkTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GreeksLinkTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreeksLinkTests/Pods-GreeksLinkTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GreeksLinkTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3340D51DCEAEB4BE0F87CEDFA90DCA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3041E349C66E8AAFD2AF0CADBF5F92 /* Pods-GreeksLink.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GreeksLink/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreeksLink/Pods-GreeksLink.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GreeksLink;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD7A7FA71E03B321AB96E2B0F01B4155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24824036CC9FF12AB74F634248571A4 /* Pods-GreeksLinkUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GreeksLinkUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GreeksLinkUITests/Pods-GreeksLinkUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GreeksLinkUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E90CBC592EC974A4DF2D63813DB77CA /* Build configuration list for PBXNativeTarget "Pods-GreeksLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10653EC75756D3104FEFB5029D9A9129 /* Debug */,
+				E3340D51DCEAEB4BE0F87CEDFA90DCA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF7913024A4522A0C653B785CB83100 /* Build configuration list for PBXNativeTarget "Pods-GreeksLinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B6AC4E381BEF449391FFD8B44AF74EB /* Debug */,
+				BFD98D0116DF3A5875F4B27B3BE4EE57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A67C16250DCB3CAA305D02DA3BD8A040 /* Build configuration list for PBXNativeTarget "Pods-GreeksLinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD7A7FA71E03B321AB96E2B0F01B4155 /* Debug */,
+				5DD41B53A9B374F0A1029E5361A055F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
