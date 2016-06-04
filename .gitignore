@@ -1,1 +1,4 @@
 GreeksLink.xcodeproj/
+.DS_Store
+*.xcuserstate
+xcuserdata/
