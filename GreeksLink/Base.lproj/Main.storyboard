@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hG-TN-ekK">
-                                <rect key="frame" x="238" y="293" width="125" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="9hp-qh-BFA"/>
-                                    <constraint firstAttribute="height" constant="30" id="edj-m5-esp"/>
-                                </constraints>
-                                <state key="normal" title="Login/Create User"/>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcY-rM-s8i">
                                 <rect key="frame" x="20" y="210" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -34,8 +26,19 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMM-8f-bmG">
                                 <rect key="frame" x="20" y="248" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hG-TN-ekK">
+                                <rect key="frame" x="238" y="293" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="9hp-qh-BFA"/>
+                                    <constraint firstAttribute="height" constant="30" id="edj-m5-esp"/>
+                                </constraints>
+                                <state key="normal" title="Login/Create User"/>
+                                <connections>
+                                    <action selector="CreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08i-rb-20l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,6 +53,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="EcY-rM-s8i" secondAttribute="trailing" id="zwW-UL-5Pk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Email" destination="EcY-rM-s8i" id="slT-ew-cEM"/>
+                        <outlet property="Password" destination="bMM-8f-bmG" id="RQc-mJ-vnT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
