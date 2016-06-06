@@ -29,15 +29,14 @@ class ViewController: UIViewController {
             user, error in
 
             if error != nil {
-                self.login()
             } else {
                 print("User created")
-                self.login()
+
             }
         })
     }
 
-    func login() {
+    @IBAction func login(sender: AnyObject) {
         FIRAuth.auth()?.signInWithEmail(Email.text!, password: Password.text!, completion: {
             user, error in
             
@@ -50,6 +49,5 @@ class ViewController: UIViewController {
             }
         })
     }
-
 }
 
