@@ -14,14 +14,37 @@ class ViewController: UIViewController {
     @IBOutlet weak var Email: UITextField!
     @IBOutlet weak var Password: UITextField!
 
+    let loginButton: FBSDKLoginButton = {
+        let button = FBSDKLoginButton()
+        button.readPermissions = ["email"]
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+
+        //add Facebook login button
+        loginButton.frame = CGRect(x: screenWidth * 0.125, y: screenHeight * 0.625, width: screenWidth * 0.75, height: screenHeight * 0.075)
+        view.addSubview(loginButton)
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError?) {
+        if let error = error {
+            print(error.localizedDescription)
+            return
+        }
+        // ...
     }
 
     @IBAction func CreateAccount(sender: AnyObject) {

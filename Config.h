@@ -11,6 +11,8 @@
 
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
 
 
 #endif /* Config_h */
