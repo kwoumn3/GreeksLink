@@ -18,44 +18,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcY-rM-s8i">
-                                <rect key="frame" x="20" y="210" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcY-rM-s8i">
+                                <rect key="frame" x="20" y="305" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMM-8f-bmG">
-                                <rect key="frame" x="20" y="248" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMM-8f-bmG">
+                                <rect key="frame" x="20" y="348" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hG-TN-ekK">
-                                <rect key="frame" x="277" y="293" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hG-TN-ekK">
+                                <rect key="frame" x="160" y="461" width="281" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="9hp-qh-BFA"/>
-                                    <constraint firstAttribute="height" constant="30" id="edj-m5-esp"/>
+                                    <constraint firstAttribute="width" constant="281" id="doc-wb-tbf"/>
+                                    <constraint firstAttribute="height" constant="50" id="w11-zw-AgA"/>
                                 </constraints>
-                                <state key="normal" title="Sign In"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="125-8U-7Iw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LI-7H-9Bf" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="159" y="397" width="281" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreeksLink Icon Design.png" translatesAutoresizingMaskIntoConstraints="NO" id="If8-OM-bTy">
+                                <rect key="frame" x="200" y="85" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Djx-Si-Mcd"/>
+                                    <constraint firstAttribute="height" constant="200" id="TdW-L6-ZQb"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bMM-8f-bmG" firstAttribute="top" secondItem="EcY-rM-s8i" secondAttribute="bottom" constant="8" id="Bpj-Pg-1CA"/>
-                            <constraint firstItem="0hG-TN-ekK" firstAttribute="top" secondItem="bMM-8f-bmG" secondAttribute="bottom" constant="15" id="HhG-Sq-EcN"/>
+                            <constraint firstItem="bMM-8f-bmG" firstAttribute="top" secondItem="EcY-rM-s8i" secondAttribute="bottom" constant="13" id="4Tv-Vb-dbg"/>
+                            <constraint firstItem="1LI-7H-9Bf" firstAttribute="centerX" secondItem="bMM-8f-bmG" secondAttribute="centerX" id="7Ad-oY-nrY"/>
+                            <constraint firstItem="0hG-TN-ekK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Apj-CB-kX3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bMM-8f-bmG" secondAttribute="bottom" constant="222" id="LgI-ut-Kl6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bMM-8f-bmG" secondAttribute="trailing" id="MgB-EA-tWg"/>
-                            <constraint firstItem="bMM-8f-bmG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="XZz-ve-SeS"/>
-                            <constraint firstItem="0hG-TN-ekK" firstAttribute="centerX" secondItem="bMM-8f-bmG" secondAttribute="centerX" id="YBh-JO-L43"/>
-                            <constraint firstItem="bMM-8f-bmG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cHW-xq-v3x"/>
+                            <constraint firstItem="If8-OM-bTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PB1-2W-ejd"/>
+                            <constraint firstItem="EcY-rM-s8i" firstAttribute="top" secondItem="If8-OM-bTy" secondAttribute="bottom" constant="20" id="aZp-Bn-zGr"/>
+                            <constraint firstItem="1LI-7H-9Bf" firstAttribute="top" secondItem="bMM-8f-bmG" secondAttribute="bottom" constant="19" id="eyo-X5-RcH"/>
                             <constraint firstAttribute="leadingMargin" secondItem="EcY-rM-s8i" secondAttribute="leading" id="i4G-cJ-AMW"/>
+                            <constraint firstItem="0hG-TN-ekK" firstAttribute="width" secondItem="1LI-7H-9Bf" secondAttribute="width" id="ku8-sI-oQk"/>
+                            <constraint firstItem="0hG-TN-ekK" firstAttribute="top" secondItem="1LI-7H-9Bf" secondAttribute="bottom" constant="14" id="sda-Yt-sdR"/>
                             <constraint firstAttribute="leadingMargin" secondItem="bMM-8f-bmG" secondAttribute="leading" id="uvp-8h-WLR"/>
+                            <constraint firstItem="1LI-7H-9Bf" firstAttribute="height" secondItem="0hG-TN-ekK" secondAttribute="height" id="z4V-75-3FM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EcY-rM-s8i" secondAttribute="trailing" id="zwW-UL-5Pk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Email" destination="EcY-rM-s8i" id="slT-ew-cEM"/>
                         <outlet property="Password" destination="bMM-8f-bmG" id="RQc-mJ-vnT"/>
+                        <outlet property="loginButton" destination="0hG-TN-ekK" id="XfT-xy-rHA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -63,4 +82,7 @@
             <point key="canvasLocation" x="35" y="144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GreeksLink Icon Design.png" width="1080" height="1080"/>
+    </resources>
 </document>

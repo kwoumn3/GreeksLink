@@ -13,8 +13,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Email: UITextField!
     @IBOutlet weak var Password: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
 
-    let loginButton: FBSDKLoginButton = {
+    let fbLoginButton: FBSDKLoginButton = {
         let button = FBSDKLoginButton()
         button.readPermissions = ["email"]
         return button
@@ -23,15 +24,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
+        print(screenWidth)
+        print(screenHeight)
+        
+        loginButton.backgroundColor = UIColor(red: 0/255, green: 172/255, blue: 237/255, alpha: 1.0)
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.blackColor().CGColor
+        
+        
 
         //add Facebook login button
-        loginButton.frame = CGRect(x: screenWidth * 0.125, y: screenHeight * 0.625, width: screenWidth * 0.75, height: screenHeight * 0.075)
-        view.addSubview(loginButton)
-
+                
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +46,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError?) {
+    func loginButton(fbLoginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError?) {
         if let error = error {
             print(error.localizedDescription)
             return
