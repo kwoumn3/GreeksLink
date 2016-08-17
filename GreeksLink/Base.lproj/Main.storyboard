@@ -3,7 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -45,19 +47,18 @@
                                 <rect key="frame" x="159" y="397" width="281" height="50"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreeksLink Icon Design.png" translatesAutoresizingMaskIntoConstraints="NO" id="If8-OM-bTy">
-                                <rect key="frame" x="200" y="85" width="200" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Djx-Si-Mcd"/>
-                                    <constraint firstAttribute="height" constant="200" id="TdW-L6-ZQb"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Register here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i53-f0-wKO">
-                                <rect key="frame" x="194.5" y="530" width="211" height="14.5"/>
+                                <rect key="frame" x="194" y="530" width="211" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreeksLink Icon Design.png" translatesAutoresizingMaskIntoConstraints="NO" id="If8-OM-bTy">
+                                <rect key="frame" x="90" y="-135" width="420" height="420"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="If8-OM-bTy" secondAttribute="height" multiplier="1:1" id="txy-Ou-6ei"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -68,6 +69,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bMM-8f-bmG" secondAttribute="bottom" constant="222" id="LgI-ut-Kl6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bMM-8f-bmG" secondAttribute="trailing" id="MgB-EA-tWg"/>
                             <constraint firstItem="If8-OM-bTy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PB1-2W-ejd"/>
+                            <constraint firstItem="If8-OM-bTy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="Z3b-cB-DV0"/>
                             <constraint firstItem="i53-f0-wKO" firstAttribute="top" secondItem="0hG-TN-ekK" secondAttribute="bottom" constant="19" id="ZHp-oL-PL8"/>
                             <constraint firstItem="EcY-rM-s8i" firstAttribute="top" secondItem="If8-OM-bTy" secondAttribute="bottom" constant="20" id="aZp-Bn-zGr"/>
                             <constraint firstItem="1LI-7H-9Bf" firstAttribute="top" secondItem="bMM-8f-bmG" secondAttribute="bottom" constant="19" id="eyo-X5-RcH"/>
