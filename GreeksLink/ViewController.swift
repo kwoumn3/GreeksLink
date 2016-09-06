@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         print(screenWidth)
         print(screenHeight)
         
-        loginButton.backgroundColor = UIColor(red: 165/255, green: 14/255, blue: 44/255, alpha: 1.0)
+        loginButton.backgroundColor = UIColor(red: 162/255, green: 33/255, blue: 23/255, alpha: 1.0)
         loginButton.layer.borderWidth = 1
         loginButton.layer.borderColor = UIColor.blackColor().CGColor
         
