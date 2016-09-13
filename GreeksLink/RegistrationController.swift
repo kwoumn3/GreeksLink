@@ -6,4 +6,9 @@
 //  Copyright © 2016 Kyle Woumn. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Firebase
+
+class RegistrationController: UIViewController {
+    
+}
