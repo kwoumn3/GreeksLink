@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Email: UITextField!
     @IBOutlet weak var Password: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    
 
     let fbLoginButton: FBSDKLoginButton = {
         let button = FBSDKLoginButton()
@@ -25,17 +26,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let screenSize: CGRect = UIScreen.mainScreen().bounds
-        let screenWidth = screenSize.width
-        let screenHeight = screenSize.height
-        print(screenWidth)
-        print(screenHeight)
-        
         loginButton.backgroundColor = UIColor(red: 162/255, green: 33/255, blue: 23/255, alpha: 1.0)
         loginButton.layer.borderWidth = 1
         loginButton.layer.borderColor = UIColor.blackColor().CGColor
-        
-        
+
 
         //add Facebook login button
                 
@@ -79,5 +73,6 @@ class ViewController: UIViewController {
             }
         })
     }
+
 }
 
