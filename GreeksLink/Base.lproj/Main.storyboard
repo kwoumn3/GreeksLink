@@ -42,14 +42,6 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="125-8U-7Iw"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreeksLink Icon Design.png" translatesAutoresizingMaskIntoConstraints="NO" id="If8-OM-bTy">
-                                <rect key="frame" x="188" y="37" width="225" height="225"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="If8-OM-bTy" secondAttribute="height" multiplier="1:1" id="QX4-bB-aun"/>
-                                    <constraint firstAttribute="width" constant="225" id="avz-74-Bke"/>
-                                    <constraint firstAttribute="height" constant="225" id="fdm-y8-ymS"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LI-7H-9Bf" customClass="FBSDKLoginButton">
                                 <rect key="frame" x="160" y="400" width="281" height="50"/>
                                 <state key="normal" title="Button"/>
@@ -62,6 +54,14 @@
                                     <segue destination="Vox-m4-Zot" kind="show" id="pLg-oI-9fb"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreeksLink Icon Design.png" translatesAutoresizingMaskIntoConstraints="NO" id="If8-OM-bTy">
+                                <rect key="frame" x="188" y="37" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="If8-OM-bTy" secondAttribute="height" multiplier="1:1" id="QX4-bB-aun"/>
+                                    <constraint firstAttribute="width" constant="225" id="avz-74-Bke"/>
+                                    <constraint firstAttribute="height" constant="225" id="fdm-y8-ymS"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -106,7 +106,7 @@
         <!--View Controller-->
         <scene sceneID="X0n-hD-TIZ">
             <objects>
-                <viewController id="Vox-m4-Zot" sceneMemberID="viewController">
+                <viewController id="Vox-m4-Zot" customClass="ViewController" customModule="GreeksLink" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qYq-3a-dRR"/>
                         <viewControllerLayoutGuide type="bottom" id="YcV-W8-2FV"/>
@@ -140,20 +140,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJd-ni-Rhs">
-                                <rect key="frame" x="284" y="459" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huE-ZL-CHS">
+                                <rect key="frame" x="284" y="440" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="gCD-fA-GCg" secondAttribute="trailing" constant="-6" id="5Pk-5n-5KQ"/>
-                            <constraint firstItem="NJd-ni-Rhs" firstAttribute="centerX" secondItem="Aqp-ex-iie" secondAttribute="centerX" id="7FX-3e-Kit"/>
+                            <constraint firstItem="huE-ZL-CHS" firstAttribute="top" secondItem="gCD-fA-GCg" secondAttribute="bottom" constant="27" id="7r6-EV-A47"/>
                             <constraint firstItem="3y2-Rf-SET" firstAttribute="top" secondItem="W1i-yh-kMy" secondAttribute="bottom" constant="19" id="8z6-zk-P47"/>
                             <constraint firstItem="W1i-yh-kMy" firstAttribute="top" secondItem="wAr-gi-nTk" secondAttribute="bottom" constant="19" id="C2o-9P-zg4"/>
                             <constraint firstItem="wAr-gi-nTk" firstAttribute="top" secondItem="27h-SX-BFy" secondAttribute="bottom" constant="19" id="FWy-Es-UOv"/>
                             <constraint firstItem="gCD-fA-GCg" firstAttribute="top" secondItem="3y2-Rf-SET" secondAttribute="bottom" constant="19" id="HY5-iq-bge"/>
-                            <constraint firstItem="NJd-ni-Rhs" firstAttribute="top" secondItem="gCD-fA-GCg" secondAttribute="bottom" constant="46" id="Leu-R7-ubh"/>
                             <constraint firstItem="W1i-yh-kMy" firstAttribute="centerY" secondItem="Aqp-ex-iie" secondAttribute="centerY" id="MTe-bd-DZg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="27h-SX-BFy" secondAttribute="trailing" constant="-6" id="On0-VN-fDZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="W1i-yh-kMy" secondAttribute="trailing" constant="-6" id="Sfe-MX-JYn"/>
@@ -162,6 +161,7 @@
                             <constraint firstItem="27h-SX-BFy" firstAttribute="leading" secondItem="Aqp-ex-iie" secondAttribute="leadingMargin" constant="6" id="Y80-vv-yjQ"/>
                             <constraint firstItem="W1i-yh-kMy" firstAttribute="leading" secondItem="Aqp-ex-iie" secondAttribute="leadingMargin" constant="6" id="ZfE-eo-Uq2"/>
                             <constraint firstItem="3y2-Rf-SET" firstAttribute="leading" secondItem="Aqp-ex-iie" secondAttribute="leadingMargin" constant="6" id="eul-NR-S7J"/>
+                            <constraint firstItem="huE-ZL-CHS" firstAttribute="centerX" secondItem="Aqp-ex-iie" secondAttribute="centerX" id="l5n-gG-F42"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wAr-gi-nTk" secondAttribute="trailing" constant="-6" id="r6R-g8-3NO"/>
                             <constraint firstItem="wAr-gi-nTk" firstAttribute="leading" secondItem="Aqp-ex-iie" secondAttribute="leadingMargin" constant="6" id="ucc-6u-UGO"/>
                         </constraints>
