@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     let fbLoginButton: FBSDKLoginButton = {
         let button = FBSDKLoginButton()
-        button.readPermissions = ["email"]
+        button.readPermissions = ["public_profile", "email", "user_friends"]
         return button
     }()
 
@@ -46,18 +46,6 @@ class ViewController: UIViewController {
             return
         }
         // ...
-    }
-
-    @IBAction func CreateAccount(sender: AnyObject) {
-        FIRAuth.auth()?.createUserWithEmail(Email.text!, password: Password.text!, completion: {
-            user, error in
-
-            if error != nil {
-            } else {
-                print("User created")
-
-            }
-        })
     }
 
     @IBAction func login(sender: AnyObject) {
