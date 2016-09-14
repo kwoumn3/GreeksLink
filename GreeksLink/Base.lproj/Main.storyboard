@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="35" y="144"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration Controller-->
         <scene sceneID="X0n-hD-TIZ">
             <objects>
-                <viewController id="Vox-m4-Zot" customClass="ViewController" customModule="GreeksLink" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vox-m4-Zot" customClass="RegistrationController" customModule="GreeksLink" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qYq-3a-dRR"/>
                         <viewControllerLayoutGuide type="bottom" id="YcV-W8-2FV"/>
@@ -123,12 +123,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W1i-yh-kMy">
                                 <rect key="frame" x="26" y="285" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3y2-Rf-SET">
                                 <rect key="frame" x="26" y="334" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAr-gi-nTk">
                                 <rect key="frame" x="26" y="236" width="560" height="30"/>
@@ -138,11 +138,14 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCD-fA-GCg">
                                 <rect key="frame" x="26" y="383" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huE-ZL-CHS">
-                                <rect key="frame" x="284" y="440" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                                <rect key="frame" x="275.5" y="440" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="registerUserByEmail:" destination="Vox-m4-Zot" eventType="touchUpInside" id="wJx-5g-M42"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -166,6 +169,11 @@
                             <constraint firstItem="wAr-gi-nTk" firstAttribute="leading" secondItem="Aqp-ex-iie" secondAttribute="leadingMargin" constant="6" id="ucc-6u-UGO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="gCD-fA-GCg" id="jpD-gc-8yN"/>
+                        <outlet property="email" destination="W1i-yh-kMy" id="gbx-6n-pQB"/>
+                        <outlet property="password" destination="3y2-Rf-SET" id="OH1-hs-NkL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TB-nZ-61g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
