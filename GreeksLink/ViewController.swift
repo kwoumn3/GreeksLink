@@ -25,18 +25,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-//        let reference = FIRDatabase.database().reference()
-//        reference.child("newChild").setValue("blah blah blah")
-//        reference.observeEventType(.ChildAdded, withBlock: { snapshot in
-//            print("THIS IS WHAT IS IN THE DATABASE \(snapshot)")
-//        })
+
         loginButton.backgroundColor = UIColor(red: 162/255, green: 33/255, blue: 23/255, alpha: 1.0)
         loginButton.layer.borderWidth = 1
         loginButton.layer.borderColor = UIColor.blackColor().CGColor
-
-
-        //add Facebook login button
                 
     }
 
