@@ -8,6 +8,7 @@ target 'GreeksLink' do
   # Pods for GreeksLink
   pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
   target 'GreeksLinkTests' do
     inherit! :search_paths
     # Pods for testing

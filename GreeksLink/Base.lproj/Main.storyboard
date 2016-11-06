@@ -170,14 +170,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="confirmPassword" destination="gCD-fA-GCg" id="jpD-gc-8yN"/>
-                        <outlet property="email" destination="W1i-yh-kMy" id="gbx-6n-pQB"/>
-                        <outlet property="password" destination="3y2-Rf-SET" id="OH1-hs-NkL"/>
+                        <outlet property="confirmPasswordTextField" destination="gCD-fA-GCg" id="xMt-9H-ISU"/>
+                        <outlet property="emailTextField" destination="W1i-yh-kMy" id="Cmg-Uk-OJt"/>
+                        <outlet property="firstNameTextField" destination="27h-SX-BFy" id="yrX-PG-2dw"/>
+                        <outlet property="lastNameTextField" destination="wAr-gi-nTk" id="hVP-FI-NC4"/>
+                        <outlet property="passwordTextField" destination="3y2-Rf-SET" id="vRs-fg-Ysi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9TB-nZ-61g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="132"/>
+            <point key="canvasLocation" x="773" y="144"/>
         </scene>
     </scenes>
     <resources>
